@@ -1,0 +1,42 @@
+Prepare a folder for GitHub 
+
+git init -> folder makes for initialise 
+git status -> knowledge current status 
+
+Git staging and unsstaging 
+-----------------------
+git add [filename] 
+git add -all -> stage all changed file in directory and subdirectory
+git add . -> stage all changed file in directory but not subdirectory 
+
+after add to stage area now check after add some text
+
+git status
+git rm --cached [filename] unstage any file 
+to restore previous document 
+git restore [filename] 
+
+git commit -m "message here" -> for moving staging to local repo 
+git commit -am "message here" -> staging and commiting directly 
+
+git remote -v [show the remote along with the url]
+git remote add origin <REMOTE_URL>
+
+git push [send to remote folder]
+git push -u origin main
+
+
+git log -> to see the commit history
+
+git add *.js [directory wildcard]
+git add **.js [directory and subdirectory wildcard]
+
+git diff [checking the difference]
+
+Uncommit 
+-------------
+git reset --soft HEAD^ [to uncommit previous]
+git reset HEAD^ [uncommit and removing from stagge area]
+git reset --hard HEAD^ [completely undo all]
+
+
